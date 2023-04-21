@@ -14,8 +14,8 @@
 
 int main(void) {
 	DIO_Int();
-	Led_Off (DIO_PortA, PIN0);
-	/*  Led_Off (DIO_PortA, PIN0);
+//Led_Off (DIO_PortA, PIN0);
+	  Led_Off (DIO_PortA, PIN0);
 	  Led_Off (DIO_PortA, PIN1) ;
 	       	Led_Off (DIO_PortA, PIN2) ;
 	        Led_Off (DIO_PortA, PIN3) ;
@@ -23,16 +23,16 @@ int main(void) {
 	       	Led_Off (DIO_PortA, PIN5) ;
 	        Led_Off (DIO_PortA, PIN6) ;
 	     	Led_Off (DIO_PortA, PIN7) ;
-	     	*/
-    while (1)
+	     	
+   /*  while (1)
     {
 
   	Led_On(DIO_PortA , PIN0);
    _delay_ms(60000);
    Led_Off(DIO_PortA , PIN0);
    _delay_ms(60000);
-    }
- /*   while (1) {
+    } */
+    while (1) {
     	Led_Toggle (DIO_PortA, PIN0) ;
     	_delay_ms(100);
     	Led_Toggle (DIO_PortA, PIN1) ;
@@ -49,5 +49,5 @@ int main(void) {
     	_delay_ms(100);
     	Led_Toggle (DIO_PortA, PIN7) ;
     	_delay_ms(100);
-        } */
+        } 
 }
